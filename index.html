@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <title>Hello World</title>
+  <style>.active { color: red; font-weight: bold; }</style>
+</head>
+
+<body ng-app="helloworld">
+  <a ui-sref="hello" ui-sref-active="active">Hello</a>
+  <a ui-sref="about" ui-sref-active="active">About</a>
+
+  <ui-view></ui-view>
+
+  <!-- Angular.js Libraries -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.3/angular-ui-router.min.js"></script>
+  <script src="helloworld.js" charset="utf-8"></script>
+</body>
+
+</html>
